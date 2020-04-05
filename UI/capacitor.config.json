@@ -1,8 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "UI",
+  "appId": "com.udemycourse.ionicangular",
+  "appName": "ionic-angular-course",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
+  "webDir": "www"
 }
