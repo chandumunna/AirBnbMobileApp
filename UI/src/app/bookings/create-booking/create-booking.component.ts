@@ -12,7 +12,7 @@ import { Place } from '../../places/place.model';
 export class CreateBookingComponent implements OnInit {
   @Input() selectedPlace: Place;
   @Input() selectedMode: 'select' | 'random';
-  @ViewChild('f', { static: true }) form: NgForm;
+  @ViewChild('f', { static: false }) form: NgForm;
   startDate: string;
   endDate: string;
 
@@ -55,7 +55,7 @@ export class CreateBookingComponent implements OnInit {
           firstName: this.form.value['first-name'],
           lastName: this.form.value['last-name'],
           guestNumber: +this.form.value['guest-number'],
-          startDate: new Date (this.form.value['date-from']),
+          startDate: new Date(this.form.value['date-from']),
           endDate: new Date(this.form.value['date-to'])
         }
       },

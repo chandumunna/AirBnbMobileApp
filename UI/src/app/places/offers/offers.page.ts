@@ -24,7 +24,7 @@ export class OffersPage implements OnInit, OnDestroy {
     });
   }
 
-  ionViewWillEnter(){
+  ionViewWillEnter() {
     this.isLoading = true;
     this.placesService.fetchPlaces().subscribe(() => {
       this.isLoading = false;
